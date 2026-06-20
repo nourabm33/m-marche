@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n="doc.title" content="M+ | More Than Marche — Piattaforma Culturale e Creativa" />
+  <title data-i18n="doc.title">M+ | More Than Marche</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ======================= PROGRESS BAR ======================= -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ======================= NAVIGATION ======================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="M+ More Than Marche">
+        <img src="assets/logo/logo-mark-light.png" alt="M+ | More Than Marche" class="nav__logo nav__logo--light" />
+        <img src="assets/logo/logo-mark-dark.png" alt="" aria-hidden="true" class="nav__logo nav__logo--dark" />
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">Cos'è M+</a>
+        <a href="#does" data-i18n="nav.does">Cosa fa</a>
+        <a href="#mission" data-i18n="nav.mission">Missione</a>
+        <a href="#values" data-i18n="nav.values">Valori</a>
+        <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+        <a href="#brands" data-i18n="nav.brands">Ecosistema</a>
+        <a href="#gallery" data-i18n="nav.gallery">Galleria</a>
+        <a href="#contact" data-i18n="nav.contact">Contatti</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-switch__btn is-active" data-lang="it" type="button">IT</button>
+          <span class="lang-switch__sep">/</span>
+          <button class="lang-switch__btn" data-lang="en" type="button">EN</button>
+        </div>
+        <button class="nav__toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="hero">
+    <div class="hero__media" id="heroMedia" data-img-slot="hero">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content reveal">
+      <p class="hero__kicker" data-i18n="hero.kicker">Piattaforma Culturale &amp; Creativa</p>
+      <h1 class="hero__title">M<span class="hero__plus">+</span></h1>
+      <p class="hero__wordmark">More Than Marche</p>
+      <p class="hero__tagline" data-i18n="hero.tagline">Nata nelle Marche. Aperta al mondo.</p>
+      <a href="#about" class="btn btn--primary hero__cta" data-i18n="hero.cta">Scopri M+</a>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll">
+      <span data-i18n="hero.scroll">Scorri</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ======================= 1. WHAT M+ IS ======================= -->
+  <section class="section section--about" id="about">
+    <div class="container grid-2">
+      <div class="section__text reveal">
+        <span class="section__index" data-i18n="about.index">01</span>
+        <span class="section__label" data-i18n="about.label">Cos'è M+</span>
+        <h2 class="section__title" data-i18n="about.title">Una piattaforma culturale<br>nata nelle Marche.</h2>
+        <p class="lead" data-i18n="about.p1"></p>
+        <p data-i18n="about.p2"></p>
+        <blockquote class="pull-quote" data-i18n="about.quote"></blockquote>
+      </div>
+      <div class="section__media reveal" data-img-slot="about">
+        <div class="media-frame"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 2. WHAT M+ DOES ======================= -->
+  <section class="section section--does" id="does">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index" data-i18n="does.index">02</span>
+        <span class="section__label" data-i18n="does.label">Cosa fa</span>
+        <h2 class="section__title" data-i18n="does.title"></h2>
+        <p class="lead lead--center" data-i18n="does.intro"></p>
+      </div>
+      <ul class="disciplines reveal">
+        <li><span data-i18n="does.i1">Cultura</span></li>
+        <li><span data-i18n="does.i2">Gastronomia</span></li>
+        <li><span data-i18n="does.i3">Design</span></li>
+        <li><span data-i18n="does.i4">Architettura</span></li>
+        <li><span data-i18n="does.i5">Eventi</span></li>
+        <li><span data-i18n="does.i6">Ricerca Estetica</span></li>
+      </ul>
+      <p class="does__outro reveal" data-i18n="does.outro"></p>
+    </div>
+  </section>
+
+  <!-- ======================= 3. MISSION ======================= -->
+  <section class="section section--mission" id="mission">
+    <div class="container grid-2 grid-2--reverse">
+      <div class="section__media reveal" data-img-slot="mission">
+        <div class="media-frame"></div>
+      </div>
+      <div class="section__text reveal">
+        <span class="section__index" data-i18n="mission.index">03</span>
+        <span class="section__label" data-i18n="mission.label">Missione &amp; Obiettivi</span>
+        <h2 class="section__title" data-i18n="mission.title">La nostra missione.</h2>
+        <ol class="mission-list">
+          <li data-i18n="mission.m1"></li>
+          <li data-i18n="mission.m2"></li>
+          <li data-i18n="mission.m3"></li>
+          <li data-i18n="mission.m4"></li>
+          <li data-i18n="mission.m5"></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 4. MEANING ======================= -->
+  <section class="section section--meaning" id="meaning">
+    <div class="meaning__bg" data-img-slot="meaning"></div>
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index" data-i18n="meaning.index">04</span>
+        <span class="section__label" data-i18n="meaning.label">Il significato</span>
+        <h2 class="section__title section__title--light" data-i18n="meaning.title">More Than Marche.</h2>
+        <p class="lead lead--center lead--light" data-i18n="meaning.p1"></p>
+      </div>
+      <div class="meaning__concepts reveal">
+        <span data-i18n="meaning.c1">Più delle Marche</span>
+        <span data-i18n="meaning.c2">Oltre il territorio</span>
+        <span data-i18n="meaning.c3">Radicati localmente</span>
+        <span data-i18n="meaning.c4">Aperti internazionalmente</span>
+      </div>
+      <p class="meaning__feature reveal" data-i18n="meaning.feature">Born in Marche — Open to the World</p>
+    </div>
+  </section>
+
+  <!-- ======================= 5. CORE VALUES ======================= -->
+  <section class="section section--values" id="values">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index" data-i18n="values.index">05</span>
+        <span class="section__label" data-i18n="values.label">Valori Fondamentali</span>
+        <h2 class="section__title" data-i18n="values.title">I nostri valori.</h2>
+      </div>
+      <div class="values-grid">
+        <article class="value-card reveal">
+          <span class="value-card__num">01</span>
+          <h3 data-i18n="values.v1.t">Territorio</h3>
+          <p data-i18n="values.v1.d"></p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__num">02</span>
+          <h3 data-i18n="values.v2.t">Contemporaneità</h3>
+          <p data-i18n="values.v2.d"></p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__num">03</span>
+          <h3 data-i18n="values.v3.t">Esperienza</h3>
+          <p data-i18n="values.v3.d"></p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__num">04</span>
+          <h3 data-i18n="values.v4.t">Collaborazione</h3>
+          <p data-i18n="values.v4.d"></p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__num">05</span>
+          <h3 data-i18n="values.v5.t">Estetica</h3>
+          <p data-i18n="values.v5.d"></p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__num">06</span>
+          <h3 data-i18n="values.v6.t">Connessione</h3>
+          <p data-i18n="values.v6.d"></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 6. MANIFESTO ======================= -->
+  <section class="section section--manifesto" id="manifesto">
+    <div class="manifesto__bg" data-img-slot="manifesto"></div>
+    <div class="container">
+      <span class="section__index section__index--light reveal" data-i18n="manifesto.index">06</span>
+      <span class="section__label section__label--light reveal" data-i18n="manifesto.label">Il Manifesto</span>
+      <p class="manifesto__body reveal" data-i18n="manifesto.body"></p>
+      <p class="manifesto__sign reveal" data-i18n="manifesto.sign">M+</p>
+    </div>
+  </section>
+
+  <!-- ======================= 7. SUB-BRANDS ======================= -->
+  <section class="section section--brands" id="brands">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index" data-i18n="brands.index">07</span>
+        <span class="section__label" data-i18n="brands.label">L'Ecosistema M+</span>
+        <h2 class="section__title" data-i18n="brands.title">Un ecosistema di formati.</h2>
+      </div>
+      <div class="brands-list">
+        <article class="brand-row reveal">
+          <h3 class="brand-row__name" data-i18n="brands.arch.t">M+ARCH</h3>
+          <p class="brand-row__desc" data-i18n="brands.arch.l"></p>
+        </article>
+        <article class="brand-row reveal">
+          <h3 class="brand-row__name" data-i18n="brands.design.t">M+DESIGN</h3>
+          <p class="brand-row__desc" data-i18n="brands.design.l"></p>
+        </article>
+        <article class="brand-row reveal">
+          <h3 class="brand-row__name" data-i18n="brands.private.t">M+PRIVATE</h3>
+          <p class="brand-row__desc" data-i18n="brands.private.l"></p>
+        </article>
+        <article class="brand-row reveal">
+          <h3 class="brand-row__name" data-i18n="brands.events.t">M+EVENTS</h3>
+          <p class="brand-row__desc" data-i18n="brands.events.l"></p>
+        </article>
+        <article class="brand-row reveal">
+          <h3 class="brand-row__name" data-i18n="brands.food.t">M+FOOD</h3>
+          <p class="brand-row__desc" data-i18n="brands.food.l"></p>
+        </article>
+      </div>
+      <div class="brand-signature reveal">
+        <h3 data-i18n="brands.sign.t">More Than Marche — M+</h3>
+        <p data-i18n="brands.sign.l"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 8. BRAND IDENTITY ======================= -->
+  <section class="section section--identity" id="identity">
+    <div class="container grid-2">
+      <div class="section__text reveal">
+        <span class="section__index" data-i18n="identity.index">08</span>
+        <span class="section__label" data-i18n="identity.label">Identità di Marca</span>
+        <h2 class="section__title" data-i18n="identity.title">Il simbolo m+.</h2>
+        <p class="lead" data-i18n="identity.p1"></p>
+        <div class="identity-features">
+          <div class="identity-feature">
+            <h4 data-i18n="identity.f1.t"></h4>
+            <p data-i18n="identity.f1.d"></p>
+          </div>
+          <div class="identity-feature">
+            <h4 data-i18n="identity.f2.t"></h4>
+            <p data-i18n="identity.f2.d"></p>
+          </div>
+          <div class="identity-feature">
+            <h4 data-i18n="identity.f3.t"></h4>
+            <p data-i18n="identity.f3.d"></p>
+          </div>
+          <div class="identity-feature">
+            <h4 data-i18n="identity.f4.t"></h4>
+            <p data-i18n="identity.f4.d"></p>
+          </div>
+        </div>
+      </div>
+      <div class="section__media reveal">
+        <div class="identity-mark">
+          <img src="assets/logo/logo-full-light.png" alt="M+ | More Than Marche" class="identity-mark__logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= GALLERY ======================= -->
+  <section class="section section--gallery" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index" data-i18n="gallery.index">09</span>
+        <span class="section__label" data-i18n="gallery.label">Galleria</span>
+        <h2 class="section__title" data-i18n="gallery.title">Uno sguardo su M+.</h2>
+        <p class="lead lead--center" data-i18n="gallery.intro"></p>
+      </div>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Gallery figures injected by main.js from the gallery manifest -->
+    </div>
+  </section>
+
+  <!-- ======================= CONTACT ======================= -->
+  <section class="section section--contact" id="contact">
+    <div class="container">
+      <div class="section__head section__head--left reveal">
+        <span class="section__index" data-i18n="contact.index">10</span>
+        <span class="section__label" data-i18n="contact.label">Contatti</span>
+        <h2 class="section__title" data-i18n="contact.title">Entra in dialogo con M+.</h2>
+        <p class="lead" data-i18n="contact.intro"></p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact form -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cf-name" data-i18n="contact.form.name">Nome</label>
+            <input type="text" id="cf-name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="cf-email" data-i18n="contact.form.email">Email</label>
+            <input type="email" id="cf-email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="cf-message" data-i18n="contact.form.message">Messaggio</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Invia messaggio</button>
+          <p class="form-feedback" id="contactFeedback" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- Side: newsletter + social -->
+        <aside class="contact-aside reveal">
+          <div class="contact-block">
+            <h3 data-i18n="contact.news.title">Newsletter</h3>
+            <p data-i18n="contact.news.desc"></p>
+            <form class="news-form" id="newsForm" novalidate>
+              <input type="email" id="news-email" name="email" data-i18n-attr="placeholder|contact.news.placeholder" placeholder="La tua email" required />
+              <button type="submit" class="btn btn--dark" data-i18n="contact.news.submit">Iscriviti</button>
+            </form>
+            <p class="form-feedback" id="newsFeedback" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="contact-block">
+            <h3 data-i18n="contact.social.title">Seguici</h3>
+            <a href="https://www.instagram.com/mplusmarche/" class="ig-card" target="_blank" rel="noopener">
+              <span class="ig-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </span>
+              <span class="ig-card__text">
+                <strong>@mplusmarche</strong>
+                <span data-i18n="contact.social.follow">Segui su Instagram</span>
+              </span>
+              <span class="ig-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <h3 data-i18n="contact.email.label">Email</h3>
+            <a href="#" class="contact-email" id="contactEmail" data-i18n="contact.email.value">—</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo/logo-full-light.png" alt="M+ | More Than Marche" class="footer__logo" />
+        <p class="footer__tagline" data-i18n="footer.tagline">Piattaforma Culturale &amp; Creativa</p>
+        <p class="footer__line" data-i18n="footer.line">Nata nelle Marche. Aperta al mondo.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.nav">Naviga</h4>
+        <a href="#about" data-i18n="nav.about">Cos'è M+</a>
+        <a href="#values" data-i18n="nav.values">Valori</a>
+        <a href="#brands" data-i18n="nav.brands">Ecosistema</a>
+        <a href="#gallery" data-i18n="nav.gallery">Galleria</a>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.connect">Connettiti</h4>
+        <a href="https://www.instagram.com/mplusmarche/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#contact" data-i18n="nav.contact">Contatti</a>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.news">Newsletter</h4>
+        <form class="news-form news-form--footer" id="newsFormFooter" novalidate>
+          <input type="email" name="email" data-i18n-attr="placeholder|contact.news.placeholder" placeholder="La tua email" required />
+          <button type="submit" class="btn btn--gold" data-i18n="contact.news.submit">Iscriviti</button>
+        </form>
+        <p class="form-feedback" id="newsFeedbackFooter" role="status" aria-live="polite"></p>
+        <div class="footer__lang">
+          <span data-i18n="footer.lang">Lingua</span>
+          <button class="lang-switch__btn is-active" data-lang="it" type="button">IT</button>
+          <span class="lang-switch__sep">/</span>
+          <button class="lang-switch__btn" data-lang="en" type="button">EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© <span id="year"></span> M+ | More Than Marche.</span>
+      <span data-i18n="footer.rights">Tutti i diritti riservati.</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
