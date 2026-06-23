@@ -92,7 +92,7 @@ const I18N = {
     "manifesto.index": "06",
     "manifesto.label": "Il Manifesto",
     "manifesto.body": "Siamo nati nelle Marche.<br>Ma non ci fermiamo alle Marche.<br>Il territorio è una radice, non un confine.<br>Creiamo esperienze, costruiamo incontri, raccontiamo luoghi.<br>Cibo, design, architettura, cultura.<br><span class=\"manifesto-accent\">More Than Marche.</span>",
-    "manifesto.sign": "M+",
+    "manifesto.sign": "m+",
 
     /* ---- 7. Sub-brand structure ---- */
     "brands.index": "07",
@@ -107,7 +107,7 @@ const I18N = {
     "brands.events.t": "M+EVENTS",
     "brands.events.l": "Eventi culturali · Festival · Format esperienziali · Eventi territoriali",
     "brands.food.t": "M+FOOD",
-    "brands.food.l": "Concept dinner · Collaborazioni con chef · Food experience · Format gastronomici",
+    "brands.food.l": "Capannoni, fabbriche e spazi industriali: il fascino dell'abbandono incontra l'eleganza dell'evento. Location uniche nelle Marche per chi non vuole un evento come tutti gli altri.",
     "brands.sign.t": "More Than Marche — M+",
     "brands.sign.l": "Associazione culturale che promuove cultura, territorio ed esperienze contemporanee.",
 
@@ -240,7 +240,7 @@ const I18N = {
     "manifesto.index": "06",
     "manifesto.label": "The Manifesto",
     "manifesto.body": "We are born in the Marche.<br>But we do not stop at the Marche.<br>The territory is a root, not a boundary.<br>We create experiences, build encounters, and narrate places.<br>Food, design, architecture, culture.<br><span class=\"manifesto-accent\">More Than Marche.</span>",
-    "manifesto.sign": "M+",
+    "manifesto.sign": "m+",
 
     "brands.index": "07",
     "brands.label": "The M+ Ecosystem",
@@ -254,7 +254,7 @@ const I18N = {
     "brands.events.t": "M+EVENTS",
     "brands.events.l": "Cultural events · Festivals · Experiential formats · Territorial events",
     "brands.food.t": "M+FOOD",
-    "brands.food.l": "Concept dinners · Chef collaborations · Food experiences · Gastronomic formats",
+    "brands.food.l": "Warehouses, factories and industrial spaces: the allure of abandonment meets the elegance of the event. Unique locations in the Marche for those who don't want an ordinary event.",
     "brands.sign.t": "More Than Marche — M+",
     "brands.sign.l": "Cultural association promoting culture, territory, and contemporary experiences.",
 
