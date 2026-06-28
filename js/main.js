@@ -13,7 +13,6 @@
      Map a slot name -> filename in assets/img/. Drop the file in and set
      the value; the layout reads it automatically. Empty => styled tile. */
   const IMG_SLOTS = {
-    hero:      "hero.jpg",
     about:     "about.jpg",
     mission:   "mission.jpg",
     meaning:   "meaning.jpg",
@@ -199,26 +198,41 @@
     });
   }
 
-  /* ---------------- Hero parallax ---------------- */
-  function initParallax() {
-    const media = document.getElementById("heroMedia");
-    if (!media) return;
-    let ticking = false;
-    window.addEventListener(
-      "scroll",
-      () => {
-        if (ticking) return;
-        ticking = true;
-        requestAnimationFrame(() => {
-          const y = window.scrollY;
-          if (y < window.innerHeight) {
-            media.style.transform = `scale(1.08) translateY(${y * 0.18}px)`;
-          }
-          ticking = false;
-        });
-      },
-      { passive: true }
-    );
+  /* ---------------- Hero typing animation ---------------- */
+  function initTyping() {
+    var el = document.getElementById("heroTypingText");
+    if (!el) return;
+    var text = "m+ | More Than Marche";
+    var typeSpeed = 110;
+    var deleteSpeed = 55;
+    var pauseAfterType = 2000;
+    var pauseAfterDelete = 700;
+    var idx = 0;
+    var deleting = false;
+
+    function tick() {
+      if (!deleting) {
+        idx++;
+        el.textContent = text.substring(0, idx);
+        if (idx >= text.length) {
+          deleting = true;
+          setTimeout(tick, pauseAfterType);
+          return;
+        }
+        setTimeout(tick, typeSpeed);
+      } else {
+        idx--;
+        el.textContent = text.substring(0, idx);
+        if (idx <= 0) {
+          deleting = false;
+          setTimeout(tick, pauseAfterDelete);
+          return;
+        }
+        setTimeout(tick, deleteSpeed);
+      }
+    }
+
+    setTimeout(tick, 600);
   }
 
   /* ---------------- Forms ---------------- */
@@ -258,7 +272,7 @@
     applyImageSlots();
     applyLang(lang);
     initNav();
-    initParallax();
+    initTyping();
     initForms();
     observeReveals();
   });
