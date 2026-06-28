@@ -51,20 +51,13 @@
 
   <!-- ======================= HERO ======================= -->
   <section class="hero" id="hero">
-    <div class="hero__media" id="heroMedia" data-img-slot="hero">
-      <div class="hero__overlay"></div>
+    <video class="hero__video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/video/hero-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__typing" id="heroTyping"><span class="hero__typing-text" id="heroTypingText"></span><span class="hero__cursor" aria-hidden="true">|</span></h1>
     </div>
-    <div class="hero__content reveal">
-      <p class="hero__kicker" data-i18n="hero.kicker">Piattaforma Culturale &amp; Creativa</p>
-      <h1 class="hero__title">m<span class="hero__plus">+</span></h1>
-      <p class="hero__wordmark">More Than Marche</p>
-      <p class="hero__tagline" data-i18n="hero.tagline">Nata nelle Marche. Aperta al mondo.</p>
-      <a href="#about" class="btn btn--primary hero__cta" data-i18n="hero.cta">Scopri M+</a>
-    </div>
-    <a href="#about" class="hero__scroll" aria-label="Scroll">
-      <span data-i18n="hero.scroll">Scorri</span>
-      <span class="hero__scroll-line"></span>
-    </a>
   </section>
 
   <!-- ======================= 1. WHAT M+ IS ======================= -->
